@@ -16,26 +16,18 @@ Your task is to perform a differential gene expression (DGE) analysis to determi
 
 ## Requirements
 
-To complete this task, you should perform the DGE analysis using [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) and generate an analysis report. This report can be in any format, however you are encouraged to create your report using [RMarkdown](https://rmarkdown.rstudio.com/) and knit it to HTML (preferred) or PDF.
-
-Minimally, the analysis report (and accompanying table/figure files) should contain the following:
+To complete this task, you should perform the DGE analysis using [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) and generate these tables and figures:
 
 1. PCA summarizing the sample-level variance within the data set.
 2. MA Plot showing the relationship between mean count and log2 fold change.
-3. Table listing the differentially-expressed genes (DEGs).
+3. Table listing the differentially-expressed genes (DEGs) saved in CSV format.
 4. Volcano plot showing all DGE results.
 5. Heatmap showing the top 10 over- and under-expressed DEGs.
 6. Enrichment analysis showing the top over- and under-expressed KEGG pathways.
-7. Commentary explaining:
-    - The steps of your analysis
-    - The results you obtained
-    - What biological conclusions (if any) you drew from the analysis
+    - Write the results to a CSV file
+    - Create a figure to summarize the results
 
-Overall, the goal of the report is to explain to a *biologist* (not a bioinformatician) what you did in your analysis, what you observed from your results, and your overall interpretation of the results from a biological point of view.
-
-Be as thorough as you feel is necessary, but try to avoid unnecessary detail. A good test of whether your report is well-written is if you show it to a biologist colleague and they can explain it back to you.
-
-You can also send your report-in-progress to Henry for feedback at any time. Without giving you the answers, he will indicate whether you are on the right track and offer suggestions for improvement.
+You can also send your work-in-progress to Henry for feedback at any time. Without giving you the answers, he will indicate whether you are on the right track and offer suggestions for improvement. **Asking for help is always encouraged and will not hurt your standing.**
 
 ## Guide
 
@@ -56,8 +48,8 @@ git clone https://github.com/Bishop-Laboratory/RA-Eval.git
 renv::restore()
 ```
 
-4. Complete the task in an R script or (preferably) an RMarkdown notebook.
-5. Create the report, along with figures / tables (or HTML/PDF RMarkdown report) in the repo.
+4. Complete the task in an R script in this repo.
+5. Create the figures / tables in the repo.
 6. Commit the results:
 
 ```shell
@@ -82,8 +74,7 @@ git push -u origin main
 
 ### R Environment
 
-To aid you in completing this task, we have included an R environment ('renv')
-with the following packages that you are welcome to use in this task:
+Here are the R packages that are likely to be useful in completing this task:
 
 1. [tidyverse](https://www.tidyverse.org/)
     - Includes [ggplot2](https://ggplot2.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/), [readr](https://readr.tidyverse.org/), etc.
@@ -94,7 +85,7 @@ with the following packages that you are welcome to use in this task:
 6. [msigdbr](https://cran.r-project.org/web/packages/msigdbr/index.html)
 7. [clusterProfiler](https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html)
 
-To install the R environment with the correct packages, simply install [renv](https://rstudio.github.io/renv/index.html)
+For convenience, we provide these packages in an R environment accompanying this repo. To install the R environment, simply install [renv](https://rstudio.github.io/renv/index.html)
 
 ```R
 install.packages("renv")
@@ -116,5 +107,4 @@ If you are struggling with the DGE analysis, you are strongly encouraged to read
 2. Harvard training on RNA-Seq (with DESeq2): [link](https://wiki.harvard.edu/confluence/display/hbctraining/DGE+workshop)
 3. Griffith Lab Training on DESeq2: [link](https://genviz.org/course/#module-04-expression)
 
-If there are any instructions which are confusing or any questions / clarifications you want to raise, please just reach out to Henry and he will assist you.
-
+If there are any instructions which are confusing or any questions / clarifications you want to raise, please just reach out to Henry and he will assist you. **Asking for help is always encouraged and will not hurt your standing.**
