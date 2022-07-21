@@ -1,5 +1,7 @@
 # DGE analysis in Ewing sarcoma cells
 
+**DO NOT FORK THIS REPO**
+
 Ewing sarcoma is a pediatric bone cancer which arises from the fusion of the EWSR1 and FLI1 genes ("EWSR1-FLI1" fusion oncogene).
 
 Recently, some have proposed therapies for Ewing sarcoma which suppress EWSR1-FLI1. However, it is not clear yet how suppressing EWSR1-FLI1 impacts the transcriptomic state of Ewing sarcoma tumor cells.
@@ -35,7 +37,7 @@ You can also send your work-in-progress to Henry for feedback at any time. Witho
 
 A minimal workflow for completing this task would involve the following steps:
 
-1. Clone this repo
+1. Clone this repo (**DO NOT FORK THIS REPO**)
 
 ```shell
 git clone https://github.com/Bishop-Laboratory/RA-Eval.git
