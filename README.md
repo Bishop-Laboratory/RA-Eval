@@ -60,7 +60,7 @@ git commit -m "<some_informative_commit_message>"
 ```
 
 7. Create a repo on your personal github account called "RA-Eval".
-8. Add your remote repo to your local repo as `origin`
+8. Add your remote repo to your local repo as `upstream` (replace `<your_github_username>` with your GitHub username)
 
 ```shell
 git remote add upstream https://github.com/<your_github_username>/RA-Eval.git
