@@ -63,13 +63,13 @@ git commit -m "<some_informative_commit_message>"
 8. Add your remote repo to your local repo as `origin`
 
 ```shell
-git remote add origin https://github.com/<your_github_username>/RA-Eval.git
+git remote add upstream https://github.com/<your_github_username>/RA-Eval.git
 ```
 
 9. Push your code to the remote repo on GitHub
 
 ```shell
-git push -u origin main
+git push -u upstream main
 ```
 
 10. Send Henry the link to your GitHub repo once you are done.
