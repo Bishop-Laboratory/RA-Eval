@@ -27,9 +27,9 @@ Minimally, the analysis report (and accompanying table/figure files) should cont
 5. Heatmap showing the top 10 over- and under-expressed DEGs.
 6. Enrichment analysis showing the top over- and under-expressed KEGG pathways.
 7. Commentary explaining:
-  - The steps of your analysis
-  - The results you obtained
-  - What biological conclusions (if any) you drew from the analysis
+    - The steps of your analysis
+    - The results you obtained
+    - What biological conclusions (if any) you drew from the analysis
 
 Overall, the goal of the report is to explain to a *biologist* (not a bioinformatician) what you did in your analysis, what you observed from your results, and your overall interpretation of the results from a biological point of view.
 
