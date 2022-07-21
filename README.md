@@ -2,9 +2,9 @@
 
 Ewing sarcoma is a pediatric bone cancer which arises from the fusion of the EWSR1 and FLI1 genes ("EWSR1-FLI1" fusion oncogene).
 
-Recently, some have proposed therapies for Ewing sarcoma which suppress EWSR1-FLI1. While these compounds are undergoing clinical trials currently, it is not clear how suppressing EWSR1-FLI1 impacts Ewing sarcoma tumor cells.
+Recently, some have proposed therapies for Ewing sarcoma which suppress EWSR1-FLI1. However, it is not clear yet how suppressing EWSR1-FLI1 impacts the transcriptomic state of Ewing sarcoma tumor cells.
 
-You have been provided with a Ewing sarcoma RNA-seq data set ("EwS.rds"). The data is in `RangedSummarizedExperiment` format. The metadata includes a column "condition" with two levels (1) shEF1 (EWSR1-FLI1 knock-down) and (2) shCTR (control). There are 3 shCTR samples and 4 shEF1 samples.
+You have been provided with a Ewing sarcoma RNA-seq data set (`EwS.rds`). The data is in `RangedSummarizedExperiment` format. The metadata includes a column `condition` with two levels (1) `shEF1` (EWSR1-FLI1 knock-down) and (2) `shCTR` (control). There are 3 shCTR samples and 4 shEF1 samples.
 
 ```R
 > rse <- readRDS("EwS.rds")
@@ -12,13 +12,13 @@ You have been provided with a Ewing sarcoma RNA-seq data set ("EwS.rds"). The da
 [1] "shCTR" "shCTR" "shCTR" "shEF1" "shEF1" "shEF1" "shEF1"
 ```
 
-Your task is to perform a differential gene expression (DGE) analysis to determine what genes, and biological pathways / processes, are altered in EWSR1-FLI1 knock-down (shEF1) vs control (shCTR).
+Your task is to perform a differential gene expression (DGE) analysis to determine what genes, and biological pathways / processes, are altered in EWSR1-FLI1 knock-down (`shEF1`) vs control (`shCTR`).
 
 ## Requirements
 
-To complete this task, you should complete the analysis and generate an analysis report. This report can be in any format, however you are encouraged to create your report using RMarkdown and knit it to HTML (preferred) or PDF.
+To complete this task, you should perform the DGE analysis using [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) and generate an analysis report. This report can be in any format, however you are encouraged to create your report using [RMarkdown](https://rmarkdown.rstudio.com/) and knit it to HTML (preferred) or PDF.
 
-Minimally, the analysis report should contain all the following:
+Minimally, the analysis report (and accompanying table/figure files) should contain the following:
 
 1. PCA summarizing the sample-level variance within the data set.
 2. MA Plot showing the relationship between mean count and log2 fold change.
@@ -26,9 +26,18 @@ Minimally, the analysis report should contain all the following:
 4. Volcano plot showing all DGE results.
 5. Heatmap showing the top 10 over- and under-expressed DEGs.
 6. Enrichment analysis showing the top over- and under-expressed KEGG pathways.
+7. Commentary explaining:
+  - The steps of your analysis
+  - The results you obtained
+  - What biological conclusions (if any) you drew from the analysis
+
+Overall, the goal of the report is to explain to a *biologist* (not a bioinformatician) what you did in your analysis, what you observed from your results, and your overall interpretation of the results from a biological point of view.
+
+Be as thorough as you feel is necessary, but try to avoid unnecessary detail. A good test of whether your report is well-written is if you show it to a biologist colleague and they can explain it back to you.
+
+You can also send your report-in-progress to Henry for feedback at any time. Without giving you the answers, he will indicate whether you are on the right track and offer suggestions for improvement.
 
 ## Guide
-
 
 ### Quick start
 
@@ -53,7 +62,7 @@ renv::restore()
 
 ```shell
 git add .
-git commit -m "<some_informative_message>"
+git commit -m "<some_informative_commit_message>"
 ```
 
 7. Create a repo on your personal github account called "RA-Eval".
