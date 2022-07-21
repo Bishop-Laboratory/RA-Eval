@@ -86,7 +86,7 @@ To aid you in completing this task, we have included an R environment ('renv')
 with the following packages that you are welcome to use in this task:
 
 1. [tidyverse](https://www.tidyverse.org/)
-  - Includes [ggplot2](https://ggplot2.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/), [readr](https://readr.tidyverse.org/), etc.
+    - Includes [ggplot2](https://ggplot2.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/), [readr](https://readr.tidyverse.org/), etc.
 2. [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 3. [EnhancedVolcano](https://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html)
 4. [pheatmap](https://cran.r-project.org/web/packages/pheatmap/index.html)
